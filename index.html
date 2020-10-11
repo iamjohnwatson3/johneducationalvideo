@@ -1,11 +1,21 @@
+
+
 <!doctype html>
 <html>
 
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, maximum-scale=1">
-
+	
+	<!--For your user form-->>
+	
+	
+	
 	<title>Homepage</title>
+	
+	<script src="js/login.js"></script>
+	<link href="css/userformstyle.css" rel="stylesheet" type="text/css"/>
+	
 	<link rel="icon" href="favicon.png" type="image/png">
 	<link rel="shortcut icon" href="favicon.ico" type="img/x-icon">
 
@@ -27,6 +37,9 @@
 </head>
 
 <body>
+
+
+
 	<header class="header" id="header">
 		<!--header-start-->
 		<div class="container">
@@ -52,6 +65,7 @@
 				<li><a href="#client">Clients</a></li>
 				<li><a href="#team">Team</a></li>
 				<li><a href="#contact">Contact</a></li>
+				<li><a href="#userbasedform">Login</a></li>
 			</ul>
 			<a class="res-nav_click" href="#"><i class="fa fa-bars"></i></a>
 		</div>
@@ -362,6 +376,42 @@
 			</div>
 		</section>
 	</div>
+
+
+
+	<!-- USER BASED FORM ADDITION -->
+	<section class="business-talking">
+		<!--business-talking-start-->
+		<div class="container">
+			<h2>Purchased the course ? Have an account already ? Lets go !!!</h2>
+		</div>
+	</section>
+	<!--user based form-talking-end-->
+	<div class="container">
+		<section class="main-section contact" id="userbasedform">
+
+			<div class="row">
+				<div class="col-lg-6 col-sm-7 wow fadeInLeft">
+					<form id="form_id" method="post" name="myform">
+						
+						<label>User Name :</label>
+						<input type="text" name="username" id="username"/>
+						
+						<label>Password :</label>
+						<input type="password" name="password" id="password"/>
+						
+						<input type="button" value="Login" id="submit" onclick="validate()"/>
+					 </form>
+
+				</div>
+
+			</div>
+		</section>
+	</div>
+
+
+
+
 	<footer class="footer">
 		<div class="container">
 			<div class="footer-logo"><a href="#"><img src="img/footer-logo.png" alt=""></a></div>
